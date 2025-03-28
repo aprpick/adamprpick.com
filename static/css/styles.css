@@ -1,104 +1,30 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// Get elements
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const body = document.body;
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
+// Check for saved theme preference in localStorage
+const savedTheme = localStorage.getItem('theme') || 'light-mode';
+body.classList.add(savedTheme);
+updateIcon(savedTheme);
 
-/* Header */
-header {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-}
+// Toggle theme on button click
+themeToggle.addEventListener('click', () => {
+    const currentTheme = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
+    const newTheme = currentTheme === 'light-mode' ? 'dark-mode' : 'light-mode';
 
-header h1 {
-    font-size: 2.5rem;
-}
+    // Update the class on the body
+    body.classList.remove('light-mode', 'dark-mode');
+    body.classList.add(newTheme);
 
-header p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
+    // Update the icon
+    updateIcon(newTheme);
 
-/* Sections */
-section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+    // Save the preference to localStorage
+    localStorage.setItem('theme', newTheme);
+});
 
-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-section p, section ul {
-    margin-bottom: 1rem;
-}
-
-section ul {
-    list-style-type: disc;
-    margin-left: 2rem;
-}
-
-.job, .project {
-    margin-bottom: 1.5rem;
-}
-
-.job h3, .project h3 {
-    font-size: 1.3rem;
-    color: #2c3e50;
-}
-
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #2c3e50;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    section {
-        padding: 1rem;
-        margin: 0.5rem;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
+// Function to update the toggle button icon
+function updateIcon(theme) {
+    themeIcon.textContent = theme === 'light-mode' ? '🌙' : '☀️';
 }
