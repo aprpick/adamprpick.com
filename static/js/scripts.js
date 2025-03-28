@@ -4,7 +4,7 @@ const themeIcon = document.getElementById('theme-icon');
 const body = document.body;
 
 // Check for saved theme preference in localStorage
-const savedTheme = localStorage.getItem('theme') || 'light-mode';
+const savedTheme = localStorage.getItem('theme') || 'dark-mode'; // Changed from 'light-mode'
 body.classList.add(savedTheme);
 updateIcon(savedTheme);
 
