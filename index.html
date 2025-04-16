@@ -1,95 +1,88 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Prpick - Resume</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Adam Prpick - Resume</title>
+<link href="static/css/styles.css" rel="stylesheet"/>
 </head>
 <body class="dark-mode"> <!-- Changed from light-mode to dark-mode -->
-    <!-- Header -->
-    <header>
-        <h1>Adam Prpick</h1>
-        <p>Engineer in Training (EIT) with APEGA | Web Developer</p>
-        <!-- Add Dark/Light Mode Toggle Button -->
-        <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
-            <span id="theme-icon">🌙</span> <!-- Icon changes based on mode -->
-        </button>
-    </header>
-
-    <!-- About Me -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
+<!-- Header -->
+<header>
+<h1>Adam Prpick</h1>
+<p>Engineer in Training (EIT) with APEGA | Web Developer</p>
+<!-- Add Dark/Light Mode Toggle Button -->
+<button aria-label="Toggle Dark/Light Mode" id="theme-toggle">
+<span id="theme-icon">🌙</span> <!-- Icon changes based on mode -->
+</button>
+</header>
+<!-- About Me -->
+<section id="about">
+<h2>About Me</h2>
+<p>
             I am a passionate data scientist with experience in machine learning, web development, and cloud deployment. 
             I recently built and deployed an insurance cost prediction app on Azure Container Apps.
         </p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python (Pandas, NumPy, Scikit-learn)</li>
-            <li>Machine Learning & Data Science</li>
-            <li>Web Development (HTML, CSS, JavaScript, Flask)</li>
-            <li>Cloud Computing (Azure, Docker)</li>
-            <li>Data Visualization (Matplotlib, Seaborn)</li>
-            <li>LUA</li>
-            <li>VBA (Word, Excel)</li>
-        </ul>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>[Job Title, e.g., Engineering Intern]</h3>
-            <p>[Company Name] | [Dates, e.g., June 2023 - August 2023]</p>
-            <ul>
-                <li>[Responsibility/Achievement 1]</li>
-                <li>[Responsibility/Achievement 2]</li>
-            </ul>
-        </div>
-        <!-- Add more jobs as needed -->
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-        <h2>Education</h2>
-        <p>Petroleum Systems Engineering</p>
-        <p>University of Regina | 2019 - 2023</p>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Insurance Cost Prediction App</h3>
-            <p>
+</section>
+<!-- Skills -->
+<section id="skills">
+<h2>Skills</h2>
+<ul>
+<li>Python (Pandas, NumPy, Scikit-learn)</li>
+<li>Machine Learning &amp; Data Science</li>
+<li>Web Development (HTML, CSS, JavaScript, Flask)</li>
+<li>Cloud Computing (Azure, Docker)</li>
+<li>Data Visualization (Matplotlib, Seaborn)</li>
+<li>LUA</li>
+<li>VBA (Word, Excel)</li>
+</ul>
+</section>
+<!-- Experience -->
+<section id="experience">
+<h2>Experience</h2>
+<div class="job">
+<h3>[Job Title, e.g., Engineering Intern]</h3>
+<p>[Company Name] | [Dates, e.g., June 2023 - August 2023]</p>
+<ul>
+<li>[Responsibility/Achievement 1]</li>
+<li>[Responsibility/Achievement 2]</li>
+</ul>
+</div>
+<!-- Add more jobs as needed -->
+</section>
+<!-- Education -->
+<section id="education">
+<h2>Education</h2>
+<p>Petroleum Systems Engineering</p>
+<p>University of Regina | 2019 - 2023</p>
+</section>
+<!-- Projects -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="project">
+<h3>Insurance Cost Prediction App</h3>
+<p>
                 A Flask-based web app that predicts US health insurance costs in USD using an Azure-trained linear regression model with an R² score of 0.95. 
                 The model was trained on data from 
                 <a href="https://www.kaggle.com/datasets/sridharstreaks/insurance-data-for-machine-learning/data" target="_blank">Kaggle's Insurance Data for Machine Learning dataset</a>. 
                 Deployed on Azure Container Apps.
                 <a href="https://insurance-estimator-8df24cefbed1.herokuapp.com/" target="_blank">Live Demo</a>
-            </p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: aprpick@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/a-p-0b319520b/" target="_blank">linkedin.com/in/a-p-0b319520b</a></p>
-        <p>GitHub: <a href="https://github.com/aprpick" target="_blank">github.com/aprpick</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Adam Prpick. All rights reserved.</p>
-    </footer>
-
-    <script src="static/js/scripts.js"></script>
+</p>
+</div>
+<!-- Add more projects as needed -->
+<div class="project"><h3>Loan Approval Prediction App</h3><p>A neural network-powered Flask web app that predicts SBA loan approval outcomes based on user-entered business information. The model was trained using Azure Machine Learning on a preprocessed version of the <a href="https://www.kaggle.com/datasets/mirbektoktogaraev/should-this-loan-be-approved-or-denied" target="_blank">Kaggle SBA loan approval dataset</a>, with built-in SHAP visualizations for explainability. <a href="https://loan-application-a553e826c843.herokuapp.com/" target="_blank">Live Demo</a></p></div></section>
+<!-- Contact -->
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: aprpick@gmail.com</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/a-p-0b319520b/" target="_blank">linkedin.com/in/a-p-0b319520b</a></p>
+<p>GitHub: <a href="https://github.com/aprpick" target="_blank">github.com/aprpick</a></p>
+</section>
+<!-- Footer -->
+<footer>
+<p>© 2025 Adam Prpick. All rights reserved.</p>
+</footer>
+<script src="static/js/scripts.js"></script>
 </body>
 </html>
