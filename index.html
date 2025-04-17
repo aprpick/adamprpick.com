@@ -5,6 +5,20 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Adam Prpick - Resume</title>
     <link href="static/css/styles.css" rel="stylesheet"/>
+    <style>
+        .collapsible-content {
+            display: none;
+        }
+        .show-more-btn {
+            background: none;
+            color: #77c0ff;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            padding: 0;
+            margin-top: 0.5rem;
+        }
+    </style>
 </head>
 <body class="dark-mode">
     <!-- Header -->
@@ -35,18 +49,6 @@
             <li>LUA</li>
             <li>VBA (Word, Excel)</li>
         </ul>
-    </section>
-    <!-- Experience -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>[Job Title, e.g., Engineering Intern]</h3>
-            <p>[Company Name] | [Dates, e.g., June 2023 - August 2023]</p>
-            <ul>
-                <li>[Responsibility/Achievement 1]</li>
-                <li>[Responsibility/Achievement 2]</li>
-            </ul>
-        </div>
     </section>
     <!-- Education -->
     <section id="education">
@@ -81,7 +83,9 @@
             <h3>Capstone Design Project: Design and Optimization of a Greenhouse Gas Mitigation Approach - From Capture to Utilization in Northminster Field</h3>
             <p>
                 A petroleum engineering capstone project completed as part of the Faculty of Engineering and Applied Science at the University of Regina, in collaboration with Abdulqadir Abdi. This project addressed Canada’s initiative to mitigate greenhouse gas emissions by integrating CO₂ capture from industrial sources with Enhanced Oil Recovery (EOR) and sequestration in the depleted Northminster Field, Saskatchewan.
-                <br/><br/>
+            </p>
+            <div class="collapsible-content">
+                <p><br/>
                 <strong>Methods:</strong> The workflow included: (1) Sourcing historical data via AccuMap, (2) Constructing a geological reservoir model, and (3) Utilizing CMG-GEM and CMOST for fluid modeling, history matching, and optimizing three CO₂ injection schemes to balance oil recovery and carbon storage.
                 <br/><br/>
                 <strong>Results:</strong> The optimal scheme (Case 2) achieved 156,129 tons of CO₂ sequestration and 52,302 barrels of oil production over the well’s life, with an injection rate of 82 tons/day. The net present value reached $57,000 with a $85/ton CO₂ credit, underscoring the economic viability post-1995 with carbon tax incentives. Comparative trials showed varying oil output and CO₂ injection efficiency.
@@ -92,7 +96,9 @@
                 <strong>Authors:</strong> Adam Prpick, Abdulqadir Abdi<br/>
                 <strong>Acknowledgments:</strong> Grateful to Dr. Michael Dent (IDTechEx Research), faculty members, and external representatives Dr. Farshid Torabi and Dr. Sam Hong for guidance. Thanks to the University of Regina for resources.<br/>
                 <a href="static/docs/Capstone Poster.png" target="_blank">View Poster</a>
-            </p>
+                </p>
+            </div>
+            <button class="show-more-btn" onclick="toggleContent(this)">Show More</button>
         </div>
     </section>
     <!-- Contact -->
@@ -106,6 +112,14 @@
     <footer style="position: fixed; bottom: 0; width: 100%; background-color: #111; border-top: 1px solid #333;">
         <p>© 2025 Adam Prpick. All rights reserved.</p>
     </footer>
+    <script>
+        function toggleContent(button) {
+            const content = button.previousElementSibling;
+            const isVisible = content.style.display === "block";
+            content.style.display = isVisible ? "none" : "block";
+            button.textContent = isVisible ? "Show More" : "Show Less";
+        }
+    </script>
     <script src="static/js/scripts.js"></script>
 </body>
 </html>
