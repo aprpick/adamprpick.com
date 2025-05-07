@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Adam Prpick - Resume</title>
+    <title>Adam Prpick - Petroleum Engineer in Training | Machine Learning Developer</title>
     <link href="static/css/styles.css" rel="stylesheet"/>
     <style>
         .collapsible-content {
@@ -19,7 +18,10 @@
             padding: 0;
             margin-top: 0.5rem;
         }
-
+        .email-text {
+            color: #888;
+            font-size: 0.9rem;
+        }
         @media print {
             footer,
             #theme-toggle,
@@ -33,57 +35,65 @@
     <!-- Header -->
     <header>
         <h1>Adam Prpick</h1>
-        <p>Engineer in Training (EIT) with APEGA | Web Developer</p>
+        <p>Petroleum Engineer in Training (EIT) with APEGA</p>
         <button aria-label="Toggle Dark/Light Mode" id="theme-toggle">
             <span id="theme-icon">🌙</span>
         </button>
     </header>
+
     <!-- About Me -->
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I'm an Engineer-in-Training (EIT) with APEGA, with growing experience in machine learning, web development, and cloud deployment.
+            I'm a Petroleum Engineer-in-Training (EIT) with APEGA, with growing experience in machine learning, web development, and cloud deployment.
             I’ve developed and deployed multiple ML-powered applications using tools like Flask, TensorFlow, and SHAP, hosted on platforms such as Azure and Heroku.
             My work focuses on building practical, user-focused solutions from complex data.
         </p>
     </section>
+
     <!-- Skills -->
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li><strong>Programming:</strong> Python (Pandas, NumPy, Scikit-learn, TensorFlow/Keras, SHAP, Joblib, Flask), Lua, VBA</li>
-            <li><strong>Machine Learning & Data Science</strong></li>
-            <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Flask</li>
-            <li><strong>Cloud & Deployment:</strong> Azure, Docker, Azure ML SDK</li>
-            <li><strong>Data Visualization:</strong> Matplotlib, Seaborn</li>
+            <li><strong>Languages & Frameworks:</strong> Python (Pandas, NumPy, Scikit-learn, TensorFlow/Keras, SHAP, Joblib, Flask), HTML, CSS, JavaScript, Lua, VBA</li>
+            <li><strong>Machine Learning & AI:</strong> Model training, interpretability (SHAP), neural networks, deployment pipelines</li>
+            <li><strong>Web Development:</strong> Flask web apps, Heroku deployment, interactive frontends</li>
+            <li><strong>Cloud & DevOps:</strong> Azure ML SDK, Docker, Azure Container Apps</li>
+            <li><strong>Visualization & Analysis:</strong> Matplotlib, Seaborn</li>
         </ul>
     </section>
+
     <!-- Education -->
     <section id="education">
         <h2>Education</h2>
         <p>Petroleum Systems Engineering</p>
         <p>University of Regina | 2023</p>
     </section>
+
     <!-- Projects -->
     <section id="projects">
         <h2>Projects</h2>
+
         <div class="project">
             <h3>Insurance Cost Prediction App</h3>
             <p>
                 A Flask-based web app that predicts U.S. health insurance costs using a linear regression model trained with Azure Machine Learning (R² = 0.95).
-                Built with data from <a href="https://www.kaggle.com/datasets/sridharstreaks/insurance-data-for-machine-learning/data" target="_blank">Kaggle’s Insurance Data for Machine Learning</a> dataset and deployed on Azure Container Apps.
-                <a href="https://insurance-estimator-8df24cefbed1.herokuapp.com/" target="_blank">Live Demo</a>
+                Built with data from <a href="https://www.kaggle.com/datasets/sridharstreaks/insurance-data-for-machine-learning/data" target="_blank">Kaggle</a> and deployed on Heroku.
+                <a href="https://insurance-estimator-8df24cefbed1.herokuapp.com/" target="_blank">Live Demo</a> |
+                <a href="https://github.com/aprpick/InsuranceCalc" target="_blank">Source Code</a>
             </p>
         </div>
+
         <div class="project">
             <h3>Loan Approval Prediction App</h3>
             <p>
-                A neural network-based Flask app that predicts SBA loan approval outcomes based on user-provided business details.
-                Trained using Azure Machine Learning on a cleaned Kaggle dataset.
-                Integrated SHAP visualizations provide explainable AI insights.
-                <a href="https://loan-application-a553e826c843.herokuapp.com/" target="_blank">Live Demo</a>
+                A Flask-based app that predicts SBA loan outcomes based on user-provided business details.
+                Trained using Azure Machine Learning with a neural network model with a <a href="https://www.kaggle.com/datasets/mirbektoktogaraev/should-this-loan-be-approved-or-denied" target="_blank">Kaggle</a> dataset.
+                <a href="https://loan-application-a553e826c843.herokuapp.com/" target="_blank">Live Demo</a> |
+                <a href="https://github.com/aprpick/LoanApplication" target="_blank">Source Code</a>
             </p>
         </div>
+
         <div class="project">
             <h3>Capstone Design Project: Design and Optimization of a Greenhouse Gas Mitigation Approach - From Capture to Utilization in Northminster Field</h3>
             <p>
@@ -95,21 +105,21 @@
                 <br/><br/>
                 <strong>Results:</strong> The optimal scheme (Case 2) achieved 156,129 tons of CO₂ sequestration and 52,302 barrels of oil production over the well’s life, with an injection rate of 82 tons/day. The net present value reached $57,000 with a $85/ton CO₂ credit, underscoring the economic viability post-1995 with carbon tax incentives. Comparative trials showed varying oil output and CO₂ injection efficiency.
                 <br/><br/>
-                <strong>Impact:</strong> This project demonstrated a sustainable approach to oil recovery while mitigating environmental impact, with potential applications in carbon credit markets.
+                <strong>Impact:</strong> This project demonstrated a sustainable approach to oil recovery while mitigating environmental impact, with potential applications in carbon credit markets. <a href="static/docs/Capstone Poster.png" target="_blank">View Poster</a>
                 <br/><br/>
                 <strong>Tools:</strong> AccuMap, CMG-GEM, CMOST, economic modeling<br/>
                 <strong>Authors:</strong> Adam Prpick, Abdulqadir Abdi<br/>
                 <strong>Acknowledgments:</strong> Grateful to Dr. Michael Dent (IDTechEx Research), faculty members, and external representatives Dr. Farshid Torabi and Dr. Sam Hong for guidance. Thanks to the University of Regina for resources.<br/>
-                <a href="static/docs/Capstone Poster.png" target="_blank">View Poster</a>
                 </p>
             </div>
             <button class="show-more-btn" onclick="toggleContent(this)">Show More</button>
         </div>
     </section>
+
     <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: aprpick@gmail.com</p>
+        <p>Email: <a href="mailto:aprpick@gmail.com">aprpick@gmail.com</a> <noscript><span class="email-text">(aprpick [at] gmail.com)</span></noscript></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/a-p-0b319520b/" target="_blank">linkedin.com/in/a-p-0b319520b</a></p>
         <p>GitHub: <a href="https://github.com/aprpick" target="_blank">github.com/aprpick</a></p>
     </section>
