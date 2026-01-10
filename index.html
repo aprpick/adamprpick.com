@@ -70,6 +70,28 @@
         <h2>Projects & Experience </h2>
 
         <div class="project">
+            <h3><u>Chicago Crime Prediction & Power BI Dashboard</u></h3>
+            <p>
+                Machine learning system predicting crime severity across 77 Chicago community areas using XGBoost (R² = 23.3%). Engineered end-to-end pipeline from 490K+ crime records (2023-2025) to interactive Power BI dashboard with 2.25M predictions for 2026.
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiMzIyNWJlODktNTEwZC00NzI3LTg0MDctM2JhMDY2NjhiZjZhIiwidCI6Ijk2MmFjYjQ3LTY4NWQtNGIyOC1hOTYzLTMxNWQwZWRjMmYyMiJ9" target="_blank">Live Dashboard</a> |
+                <a href="https://github.com/aprpick/ChicagoCrimePrediction" target="_blank">Source Code</a>
+            </p>
+            <p><strong>Tools:</strong> Python (XGBoost, Pandas, SHAP), Power BI, DAX | <em>2026</em></p>
+            <div class="collapsible-content">
+                <p><br/>
+                <strong>Data Engineering:</strong> Built 14-stage ETL pipeline processing 490K crime records. Engineered temporal features (3-hour time blocks, weekend patterns) and severity scoring system (1-10 scale). Cleaned and validated data through multiple quality checks.
+                <br/><br/>
+                <strong>Model Development:</strong> Trained XGBoost regression model with 5 core features achieving 23.3% R² on zero-heavy dataset (57.6% zero-crime blocks). Used SHAP analysis to quantify feature contributions (Community Area: 64.3%, Time Block: 13.5%). Optimized hyperparameters for production deployment.
+                <br/><br/>
+                <strong>Visualization & Deployment:</strong> Generated 224K+ daily predictions across all areas and time blocks for 2026. Built interactive Power BI dashboard with temporal slicers, risk categorization, and geographic heatmaps for police resource allocation.
+                <br/><br/>
+                <strong>Impact:</strong> Enables data-driven deployment decisions by identifying high-risk areas and time periods. Model explanations provide actionable insights: location accounts for 64% of predictions, time patterns 29%. Framework applicable to other cities with crime data.
+                </p>
+            </div>
+            <button class="show-more-btn" onclick="toggleContent(this)">Show More</button>
+        </div>
+
+        <div class="project">
             <h3><u>Insurance Cost Prediction App</u></h3>
             <p>
                 A Flask-based web app that predicts U.S. health insurance costs using a linear regression model trained with Azure Machine Learning (R² = 0.95).
@@ -88,26 +110,6 @@
                 <a href="https://github.com/aprpick/LoanApplication" target="_blank">Source Code</a>
             </p>
         </div>
-
-        <div class="project">
-    <h3><u>Engineering Capstone: CO₂ Capture & Enhanced Oil Recovery</u></h3>
-    <p>
-        Designed greenhouse gas mitigation system integrating CO₂ capture with Enhanced Oil Recovery for depleted oil fields in Saskatchewan. Optimized injection schemes achieving 156,000+ tons of CO₂ sequestration and 52,000+ barrels of oil production with demonstrated economic viability.
-    </p>
-    <p><strong>Tools:</strong> AccuMap, CMG-GEM, CMOST, Reservoir Modeling | <em>University of Regina, 2023</em></p>
-    <div class="collapsible-content">
-        <p><br/>
-        <strong>Methods:</strong> Sourced historical data via AccuMap, constructed geological reservoir model, and utilized CMG-GEM and CMOST for fluid modeling and history matching. Optimized three CO₂ injection schemes to balance oil recovery and carbon storage.
-        <br/><br/>
-        <strong>Results:</strong> Optimal scheme achieved 156,129 tons of CO₂ sequestration and 52,302 barrels of oil production with injection rate of 82 tons/day. Net present value reached $57,000 with $85/ton CO₂ credit, demonstrating economic viability with carbon tax incentives.
-        <br/><br/>
-        <strong>Impact:</strong> Demonstrated sustainable approach to oil recovery while mitigating environmental impact with applications in carbon credit markets. <a href="static/docs/Capstone Poster.png" target="_blank">View Poster</a>
-        <br/><br/>
-        <strong>Collaborator:</strong> Abdulqadir Abdi | University of Regina, Faculty of Engineering and Applied Science
-        </p>
-    </div>
-    <button class="show-more-btn" onclick="toggleContent(this)">Show More</button>
-</div>
     </section>
 
     <!-- Education -->
